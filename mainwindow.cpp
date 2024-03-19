@@ -15,6 +15,7 @@ MainWindow::MainWindow(QWidget *parent)
     });
 
     //重新提交仓库后
+    //第三次提交
 }
 
 MainWindow::~MainWindow()
