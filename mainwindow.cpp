@@ -13,6 +13,8 @@ MainWindow::MainWindow(QWidget *parent)
         m_register->show();
         this->hide();
     });
+
+    //重新提交仓库后
 }
 
 MainWindow::~MainWindow()
