@@ -1,0 +1,22 @@
+^D:\CODE\UNTITLED\BUILD\CMAKEFILES\E33D17A56181FE5C66A6EE0748F0763F\AUTOUIC_(CONFIG).STAMP.RULE
+setlocal
+cd D:\code\untitled\build
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CODE\UNTITLED\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/code/untitled -BD:/code/untitled/build --check-stamp-file D:/code/untitled/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
